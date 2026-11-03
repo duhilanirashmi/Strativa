@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 # Temporary project setup folder
 /strativa-setup/
+# Environment variables and API keys
+.env
+.env.local
+.env.*
+!.env.example
