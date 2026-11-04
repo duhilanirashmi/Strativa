@@ -150,8 +150,6 @@ const result = await coordinateManagementChallenge(
   challenge.trim(),
   existingTasks
 );
-      challenge.trim()
-    );
 
     res.json(result);
   } catch (error) {

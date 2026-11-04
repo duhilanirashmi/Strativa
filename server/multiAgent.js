@@ -180,16 +180,16 @@ function allocateResources(tasks, team) {
     );
 
     if (available) {
-      remainingCapacity[available.name] -= estimatedHours;
+  remainingCapacity[available.name] -= estimatedHours;
 
-      {allocations.push(
-        task: task.title,
-requiredSkill: task.requiredSkill,
-owner: available.name,
-        estimatedHours,
-        status: "Proposed — Requires Manager Approval",
-      });
-    } else {
+  allocations.push({
+    task: task.title,
+    requiredSkill: task.requiredSkill,
+    owner: available.name,
+    estimatedHours,
+    status: "Proposed — Requires Manager Approval",
+  });
+} else {
       allocations.push({
         task: task.title,
 requiredSkill: task.requiredSkill,
